@@ -75,7 +75,7 @@
                 let countryList = "" ;
                 $(response[2].data).each(function(index , value){
                     countryList += `
-                    <option value="${value.currency}">${value.name}</option>
+                    <option value="${value.currency}">${value.name} (${value.currency})</option>
                     ` ;
                 });
                 $(currentCurrencySelect).html(countryList);
